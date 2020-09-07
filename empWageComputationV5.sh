@@ -9,7 +9,7 @@ totalSalary=0;
 for (( i=1; i<=$numWorkingDays; i++ ))
 do
 	empCheck=$(( RANDOM % 3))
-	case $randomCheck in
+	case $empCheck in
         	$isFullTime)
 
         		empHrs=8;
@@ -21,5 +21,6 @@ do
 		empHrs=0;
 esac
 salary=$(($empRatePerHr*$empHrs));
-totalSalary=$(($totalSalary+$salary));
 done
+totalSalary=$(($totalSalary+$salary));
+echo $totalSalary
