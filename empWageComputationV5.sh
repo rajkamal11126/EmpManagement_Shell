@@ -20,8 +20,6 @@ do
 
 		empHrs=0;
 esac
-
 salary=$(($empRatePerHr*$empHrs));
 totalSalary=$(($totalSalary+$salary));
-
 done
