@@ -2,8 +2,8 @@
 
 isPartTime=1;
 isFullTime=2;
-empRatePerHr=100;
-maxHrsInMonth=10;
+empRatePerHr=10;
+maxHrsInMonth=100;
 numWorkingDays=20;
 totalSalary=0;
 totalWorkingDays=0;
