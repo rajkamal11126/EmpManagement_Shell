@@ -23,12 +23,13 @@ function empWorkingHrs()
 		empHrs=0 ;;
 	esac
 echo $empHrs
-
 }
+
 function getEmpWage(){
 local empHrs=$1
 echo $(($empHrs * $empRatePerHr))
 }
+
 while [[ $totalEmpHrs -lt $maxHrsInMonth && $totalWorkingDays -lt $numWorkingDays ]]
 do
 
@@ -38,5 +39,6 @@ do
         totalEmpHrs=$(($totalEmpHrs+$empHrs))
 	 dailyWage[$totalWorkingDays]="$( getEmpWage $empHrs )"
 done
+
 totalSalary=$(($totalEmpHrs*$empRatePerHr))
 echo ${dailyWage[@]}
