@@ -27,7 +27,7 @@ echo $empHrs
 }
 function getEmpWage(){
 local empHrs=$1
-echo $(($empHrs * $empRatepPerHr))
+echo $(($empHrs * $empRatePerHr))
 }
 while [[ $totalEmpHrs -lt $maxHrsInMonth && $totalWorkingDays -lt $numWorkingDays ]]
 do
